@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>SIMPLE CALCULATOR</title>
+<style>
+table, form {
+  border: 1px solid black;
+  width:252.5px;
+}
+</style>
+</head>
+<center>
+<body>
+<form name="Calculator">
+
+<tr>
+<td>
+<input type="text" name="Input" Size="30">
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<input type="button" name="one" value=" 1 " OnClick="Calculator.Input.value += '1'">
+<input type="button" name="two" value=" 2 " OnCLick="Calculator.Input.value += '2'">
+<input type="button" name="three" value=" 3 " OnClick="Calculator.Input.value += '3'">
+<input type="button" name="add" value=" + " OnClick="Calculator.Input.value += ' + '">
+<br>
+<input type="button" name="four" value=" 4 " OnClick="Calculator.Input.value += '4'">
+<input type="button" name="five" value=" 5 " OnCLick="Calculator.Input.value += '5'">
+<input type="button" name="six"  value=" 6 " OnClick="Calculator.Input.value += '6'">
+<input type="button" name="minus" value=" - " OnClick="Calculator.Input.value += ' - '">
+<br>
+<input type="button" name="seven" value=" 7 " OnClick="Calculator.Input.value += '7'">
+<input type="button" name="eight"  value=" 8 " OnCLick="Calculator.Input.value += '8'">
+<input type="button" name="nine"  value=" 9 " OnClick="Calculator.Input.value += '9'">
+<input type="button" name="mul"  value=" * " OnClick="Calculator.Input.value += ' * '">
+<br>
+<input type="button" name="clear"  value=" c " OnClick="Calculator.Input.value = ''">
+<input type="button" name="zero"  value=" 0 " OnClick="Calculator.Input.value += '0'">
+<input type="button" name="DoIt"  value=" = " OnClick="Calculator.Input.value = eval(Calculator.Input.value)">
+<input type="button" name="div" value=" / " OnClick="Calculator.Input.value += ' / '">
+<br>
+</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
